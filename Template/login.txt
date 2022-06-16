@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Login | Surve Secure</title>
+	<link rel="icon" href="../../Images/Icons/cam.png" type="image/gif" sizes="25x25">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<!-- <script type="text/javascript" src="slide.js"></script> -->
+	
+</head>
+<body vlink="brown" alink="white">
+
+	<main>
+			
+		<form id="fr">
+
+			<img src="../../Images/Pure.png" width="55em" height="55em">	
+
+			<div class="infs">
+				<input type="text" name="username" placeholder="Username" required>
+			</div>
+
+			<div class="infs">
+				<input type="email" name="email" placeholder="E-mail" required>
+			</div>
+
+			<div class="infs">
+				<input type="password" name="password" placeholder="Password" required>
+			</div>
+
+			<div id="forget">
+				<a href="#">Forget Password</a>
+			</div>
+
+			<div class="btn">
+				<input type="submit" name="submit" value="Log In">
+			</div>
+
+		</form>
+
+		<div>
+
+			<form id="frm2">
+
+				<i class="fa fa-info-circle" aria-hidden="true"></i>
+
+				<div class="infs">
+					<input type="text" name="username" placeholder="First name" style="padding-top:2em" required>
+				</div>
+
+				<div class="infs">
+					<input type="text" name="username" placeholder="Last name" required>
+				</div>
+
+				<div class="infs">
+					<input type="email" name="email" placeholder="Email address" required>
+				</div>
+
+				<div class="infs">
+					<input type="password" name="password" placeholder="Password" required>
+				</div>
+
+				<div class="btn">
+					<input type="submit" name="submit" value="Sign Up" style="margin-top:3.4em;">
+				</div>
+			
+			</form>
+
+		</div>
+
+		<div id="con" class="slide" >
+
+			<div id="s1">
+
+				<h1 id="hlo">Hello, Freind!</h1>
+
+				<p id="plo" style="font-size:1.1em;margin: 25px;">
+					Enter your personal details and start working with us
+				</p> 
+
+				<input id="btn1" type="button" value="Sign Up" />
+				<br><br><br>
+
+				<i id="s1i" class="fa fa-grav" aria-hidden="true"></i>
+
+				<h1 id="hlo2">Welcome Back!</h1>
+
+				<p id="plo2" style="font-size:1.1em;margin: 25px;">
+					To keep connected with us please login with your personal info
+				</p> 
+
+				<input id="btn2" type="hidden" value="Log In" />
+
+				<svg id="s2i" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-astronaut" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user-astronaut fa-w-14 fa-2x" with="200px" height="200px"><path fill="currentColor" d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8 0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6 0 224 0S102.2 39.5 77.5 96H64c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5 0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72l12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5 0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7 0 32 14.3 32 32v64h80c26.5 0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8 0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"></path></svg>
+
+			</div>
+			
+		</div>
+
+		<script>
+			
+			const div = document.getElementById('con');
+			const form1 = document.getElementById('fr');
+			const form2 = document.getElementById('frm2');
+			const removeBtn1 = document.getElementById('btn1');
+			const removeBtn2 = document.getElementById('btn2');
+			
+			window.onload = (event) => {
+
+				document.getElementById('s2i').style.visibility = 'hidden';
+				document.getElementById('hlo2').style.visibility = 'hidden';
+				document.getElementById('plo2').style.visibility = 'hidden';
+
+			};
+
+  		btn1.onclick = function() {
+    		
+			document.getElementById('con').classList.add('movl');
+			document.getElementById('fr').classList.add('frm');
+			document.getElementById('frm2').classList.add('frm3');
+	    	document.getElementById('hlo').style.opacity = 0;
+	    	document.getElementById('plo').style.opacity = 0;
+	    	document.getElementById('hlo2').style.opacity = 100;
+	    	document.getElementById('plo2').style.opacity = 100;
+	    	document.getElementById('btn1').style.opacity = 0;
+	    	document.getElementById('btn2').style.opacity = 100;
+	    	document.getElementById('s1i').style.opacity = 0;
+	    	document.getElementById('btn2').type = 'button';
+	    	document.getElementById('s2i').style.visibility = 'visible';
+	    	document.getElementById('hlo2').style.visibility = 'visible';
+	    	document.getElementById('plo2').style.visibility = 'visible';
+	    	document.getElementById('s2i').style.opacity = 100;
+
+	    	removeBtn1.addEventListener('click',()=>{
+    			div.classList.remove('movr');
+    			form1.classList.remove('frm2');
+    			form2.classList.remove('frm4');
+			})
+	    }
+
+	    btn2.onclick = function() {
+
+			document.getElementById('con').classList.add('movr');
+			document.getElementById('fr').classList.add('frm2');
+			document.getElementById('frm2').classList.add('frm4');
+	    	document.getElementById('btn2').style.opacity = 0;
+	    	document.getElementById('btn1').style.opacity = 100;
+	    	document.getElementById('hlo').style.opacity = 100;
+	    	document.getElementById('plo').style.opacity = 100;
+	    	document.getElementById('hlo2').style.opacity = 0;
+	    	document.getElementById('plo2').style.opacity = 0;
+	    	document.getElementById('s1i').style.opacity = 100;
+	    	document.getElementById('s2i').style.opacity = 0;
+
+	    	removeBtn2.addEventListener('click',()=>{
+    			div.classList.remove('movl');
+    			form1.classList.remove('frm');
+    			form2.classList.remove('frm3');
+			})	    	
+	    }
+
+		</script>
+
+	</main>
+
+</body>
+
+</html>

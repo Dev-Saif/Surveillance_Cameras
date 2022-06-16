@@ -1,0 +1,136 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body {
+  background-image: url(../../Images/Surve.jpg); 
+  background-repeat: repeat;
+  background-size: 100%;
+	zoom:80%;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	font-family:Calibri Light;
+}
+
+main > img{
+	transform: rotate(180deg);
+	filter: brightness(10000);
+}
+
+main > form {
+	width: 280px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	border:solid 2px #F9A36B82;
+	/*border:hidden;*/
+	background-color: #BC020050;
+	border-radius: 20px;
+	padding:50px;
+	top: 50%;
+	left: 50%;
+	height: 15cm;
+}
+
+form img{
+	margin-bottom: 40px;
+	margin-right: 1.3em;
+	padding: 13px 0;
+	-webkit-filter: invert(90%); filter: invert(90%);
+}
+
+::placeholder{
+	color: white;
+	font-family:Raleway;
+	font-size: px;
+}
+
+.infs {
+	width: 100%;
+	padding: 8px 0;
+	margin: 4px 0;
+	font-size: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #f7a196;
+}
+
+.infs input {
+	border:none;
+	outline:none;
+	background:none;
+	color:#fff;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin:10px;
+	text-align: center;
+}
+
+.btn input{
+	width: 50%;
+	background-color:#fff;
+	transition-duration: 0.4s;
+	/*border: 2px solid #f7a196;*/
+	border-radius: 50px;
+	border: none;
+	color: #D5562B;
+	padding: 8px;
+	font-size: 20px;
+	cursor: pointer;
+	margin-top: 50px;
+	font-family: Quicksand Medium;
+}
+
+.btn input:hover {
+  background-color:#D5562B ;
+  color: #fff;
+}
+
+#forget{
+	width: 70%;
+	border:hidden;
+	/*background-color: orangered;*/
+	padding: 20px;
+	margin-top: 1em;
+	margin-left: 1em;
+	padding-bottom: 35px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#forget a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#forget a:hover{
+	color: #F25A06;
+	transition-duration: 0.4s;
+}
+
+.last{
+	border-top: solid 5px #F1917C;
+	transform: translateX(-38px);
+	width: 350px;
+	color: #F25A06;
+	padding-top: 30px;
+}
+
+.last a{
+	color: #F25A06;
+}
+
+#social{
+	background-color: #351984;
+	color: white;
+	border-radius: 90px;
+	padding: 0.8em;
+	margin-left: 2px;
+	position: fixed;
+}
+
+#social:hover{
+	background-color: white;
+	color: #351984;
+}

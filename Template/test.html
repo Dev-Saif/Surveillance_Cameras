@@ -1,0 +1,37 @@
+<div id="box">
+  This is div
+</div>
+
+<button id="add-btn">Add class</button>
+<button id="remove-btn">Remove class</button>
+<p>
+    <i class="fas fa-user-astronaut"></i>
+    
+    <i class="fas fa-user-astronaut" style="font-size:20px"></i>
+    <i class="fas fa-user-astronaut" style="font-size:30px"></i>
+    <i class="fas fa-user-astronaut" style="font-size:40px"></i>
+    <i class="fas fa-user-astronaut" style="font-size:50px"></i>
+  </p>
+<style type="text/css">
+  
+.shadow{
+  box-shadow: 2px 1px 2px 2px #ccc;
+  padding:1rem;
+  margin:1rem;
+}
+
+</style>
+
+<script type="text/javascript">
+  const div = document.getElementById('box');
+const addBtn = document.getElementById('add-btn');
+const removeBtn = document.getElementById('remove-btn');
+
+addBtn.addEventListener('click',()=>{
+    div.classList.add('shadow');
+})
+
+removeBtn.addEventListener('click',()=>{
+    div.classList.remove('shadow');
+})
+</script>

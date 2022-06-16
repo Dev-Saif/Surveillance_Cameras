@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Surve Secure</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<style>
+      body {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+      }
+  
+      .ball {
+        height: 12rem;
+        width: 12rem;
+        background-color: white;
+        border-radius: 50%;
+        margin-top: 20rem;
+      }
+    </style>
+
+    <div class="left" id="leftID">Left
+		<!-- <input type="button" name="click" onclick=""> -->
+		<button onclick="setInterval(spostaDivh, 20)">Click</button>
+	</div>
+    <script>
+      let left = document.getElementById("leftID");
+  
+      var margin = 0;
+  
+      let l = window.screen.width;
+      let w = 300;
+  
+      function spostaDivh() {
+
+        if (margin == w) {
+          margin = 0 + "px";
+        } else {
+          left.style.marginLeft = margin + "px";
+        }
+        margin += 10;
+      }
+    </script>
+	<header>Header</header>
+	<div class="menu">Menu</div>
+	
+	<main>Main</main>
+	<footer>Footer</footer>
+
+	
+</body>
+</html>
+
